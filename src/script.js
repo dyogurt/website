@@ -33,9 +33,4 @@ function open_menu() {
     getElementById("mobile_menu_links").
     classList.
     toggle("dn");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
 }
