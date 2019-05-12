@@ -1,4 +1,4 @@
-var header = `
+const headerHTML = `
 <header class="pv4-ns">
   <h1><a class="f2-ns f1 lh-title normal no-underline dark-gray" href="#home">greekδiogurt</a></h1>
   <nav class="db-ns dn">
@@ -22,14 +22,11 @@ var header = `
 </header>
 `;
 
-var footer = `
-  <footer>Es um pandinho!</footer>
-`
-
-ko.applyBindings({
-  header: ko.observable(header),
-  footer: ko.observable(footer),
+ko.components.register('header', {
+    template: headerHTML
 });
+
+ko.applyBindings();
 
 function open_menu() {
   document.
