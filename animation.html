@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>animation</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script defer src="src/script.js"></script>
+</head>
+
+<body class="bg-near-white debug">
+  <section class="mv4-ns ph4-ns mv3-m ph3-m mv3 ph3">
+    <div data-bind="html: header"></div>
+  </section>
+  <section>
+    <main>
+      <div class="cf ph3-ns">
+        <!--animation in sigle column-->
+        <div class="fl w-100 ph2-ns ph3 flex flex-column tc">
+          <div class="ph4-ns pb4-ns pb4 mw-3-ns">
+            <img  class="w-50-ns w-100 w-70-m" src="content/happy_gif.gif" alt="Animation
+            of two hands clapping">
+          </div>
+          <div class="ph4-ns pb4-ns pb4 mw-3-ns">
+            <img  class="w-50-ns w-100 w-70-m" src="content/lighter.gif" alt="Animation
+            of one hand lighter a zippo lighter">
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+</body>
+</html>

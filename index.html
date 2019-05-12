@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>greekδiogurt</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script defer src="src/script.js"></script>
+</head>
+
+<body class="bg-near-white">
+  <section class="pa4-ns pa3">
+      <!--desktop nav menu-->
+        <div data-bind="html: header"></div>
+  </section>
+  <section class="pa4-ns pa3">
+    <main>
+      <div class="cf">
+        <!--images left column-->
+        <div class="fl w-100 w-50-ns w-100-m ph2-ns">
+          <div class="pb2-ns pb3">
+            <img  class="w-100" src="content/saturn_riso_small.jpg" alt="An illustrated
+            view of the planet Saturn with it's rings">
+          </div>
+          <div class="pb2-ns pb3">
+            <img  class="w-100" src="content/kintsugi_small.jpg" alt="A boy in a room with a stone like body broken in several parts,
+           he is putting himself back together after a bad relationship">
+          </div>
+          <div class="pb2-ns pb3">
+            <img  class="w-100" src="content/peixe.png" alt="A monochromatic dead fish on
+            a cutting board">
+          </div>
+          <div class="pb2-ns pb3">
+            <img  class="w-100" src="content/look.png" alt="A line-based representation of
+            someone (represented by an eye) lighting a lighter">
+          </div>
+        </div>
+        <!--images left column-->
+        <div class="fl w-100 w-50-ns w-100-m ph2-ns">
+          <div class="pb2-ns pb3">
+            <img class="w-100" src="./content/meta_web_version.jpg" alt="An illustrated
+            map topview of a set of islands and a volcano">
+          </div>
+          <div class="pb2-ns pb3">
+            <img class="w-100" src="./content/unknown.jpg" alt="A group of people
+            use multiple scientific tools and approaches to study an unknown object
+            floating in a colorful space">
+          </div>
+          <div class="pb2-ns pb3">
+            <img  class="w-100" src="content/dendron.png" alt="A small pinetree with a
+            modern looking building in the back at sunset">
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <div data-bind="html: footer"></div>
+</body>
+</html>
