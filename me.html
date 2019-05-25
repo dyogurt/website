@@ -6,39 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>me</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="content/icons/favicon64.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <script defer src="src/script.js"></script>
 </head>
 
-<body class="bg-near-white debug">
-  <section class="mv4-ns ph4-ns mv3-m ph3-m mv3 ph3">
+<body class="bg-near-white">
+  <section class="pa5-l pa4-m pa3">
     <div data-bind="component: 'header'"></div>
   </section>
-  <section>
+  <section class="ph5-l ph4-m ph3 pt3-l pt2-m pt1">
     <main>
       <!--information about me-->
-      <div class="mv5-ns ph4-ns mv5-m ph3-m mv5 ph3">
+      <div class="pb2">
         <p class="f3-ns f4 measure-wide lh-copy">hello human or bot! I'm an illustrator
-        trying to use a creative & scientific approach to give your idea or project
-        good value in the material or digital world.
+        using a creative & scientific approach to give your idea good value in the material or digital world.
       currently @lisbon pt</p>
       </div>
-      <div class="mv5-ns ph4-ns mv5-m ph3-m mv5 ph3">
+      <div class="pb4">
         <p class="f3-ns f4 measure-wide">feel free to send me an eletronic mail if you
         have any queries</p>
         <a target="_blank" rel="noopener noreferrer" class="no-underline normal dim dark-gray f3-ns f4 measure-wide"
         href="mailto:diogo.matias@tutanota.com">diogo.matias@tutanota.com</a>
       </div>
-      <div class="mv5-ns ph4-ns mv5-m ph3-m mv5 ph3">
-        <a target="_blank" rel="noopener noreferrer" class="no-underline normal dim light-red f3-ns f4 measure-wide"
+      <div class="pb2">
+        <a target="_blank" rel="noopener noreferrer" class="no-underline normal underline-hover green f3-ns f4 measure-wide"
         href="https://www.instagram.com/greekdyogurt/">instagram</a>
       </div>
-      <div class="mv5-ns ph4-ns mv5-m ph3-m mv5 ph3">
-        <p class="f3-ns f4 measure-wide lh-copy">i'm studying animation and design and i'm curious
-          about anything open-source and cool tools and concepts that can help me have a virtuous
-          and sustainable life</p>
+      <div class="pb6">
+        <p class="f3-ns f4 measure-wide lh-copy">+ these days i'm into gardening, architecture, typography and interactive
+          printing. a good concept is worth exploring no matter the field.</p>
       </div>
     </main>
   </section>
+      <div data-bind="component: 'footer'"></div>
 </body>
 </html>

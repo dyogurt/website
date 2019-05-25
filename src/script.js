@@ -1,10 +1,9 @@
 const headerHTML = `
 <header class="pv4-ns">
-  <h1><a class="f2-ns f1 lh-title normal no-underline dark-gray" href="#home">greekδiogurt</a></h1>
+  <h1><a class="f2-ns f1 lh-title normal no-underline dim dark-gray" href="me.html">δyogurt</a></h1>
   <nav class="db-ns dn">
     <a class="no-underline dim f2 lh-copy normal dark-gray mr4" href="index.html">illustration</a>
     <a class="no-underline dim f2 lh-copy normal dark-gray mr4" href="animation.html">animation</a>
-    <a class="no-underline dim f2 lh-copy normal dark-gray mr4" href="me.html">me</a>
     <a class="no-underline dim f2 lh-copy normal dark-gray" href="resources.html">resources</a>
   </nav>
   <!--mobile nav menu-->
@@ -14,7 +13,6 @@ const headerHTML = `
       <div class="flex flex-column pt4">
         <a class="no-underline dim f2 lh-copy normal dark-gray" href="index.html">illustration</a>
         <a class="no-underline dim f2 lh-copy normal dark-gray" href="animation.html">animation</a>
-        <a class="no-underline dim f2 lh-copy normal dark-gray" href="me.html">me</a>
         <a class="no-underline dim f2 lh-copy normal dark-gray" href="resources.html">resources</a>
       </div>
     </div>
@@ -22,8 +20,20 @@ const headerHTML = `
 </header>
 `;
 
+const footerHTML = `
+<footer class="ph5-l ph4-m ph3">
+  <div class="w-100 f3-ns f4 measure-wide lh-copy pb4-l pb3-m pb2">
+    <p>made with <a href="http://tachyons.io/" class="no-underline normal underline-hover green">Tachyons</a></p>
+  </div>
+</footer>
+`;
+
 ko.components.register('header', {
     template: headerHTML
+});
+
+ko.components.register('footer', {
+    template: footerHTML
 });
 
 ko.applyBindings();

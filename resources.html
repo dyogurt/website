@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>resources</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="content/icons/favicon64.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script defer src="src/script.js"></script>
+</head>
+
+<body class="bg-near-white">
+  <section class="pa5-l pa4-m pa3">
+    <div data-bind="component: 'header'"></div>
+  </section>
+  <section class="ph5-l ph4-m ph3 pt3-l pt2-m pt1">
+    <main>
+      <div class="flex flex-wrap">
+        <div class="w-100 f3-ns f4 measure-wide lh-copy pb4-l pb3-m pb2">
+          <p>Apps</p>
+          <a target="_blank" rel="noopener noreferrer" class="no-underline normal underline-hover green"
+          href="https://www.are.na/diogo-matias">are.na</a><br>
+          <a target="_blank" rel="noopener noreferrer" class="no-underline normal underline-hover green"
+          href="https://artivive.com/">artivive</a>
+        </div>
+        <div class="w-100 f3-ns f4 measure-wide lh-copy pb6">
+          <p>Colour</p>
+          <a target="_blank" rel="noopener noreferrer" class="no-underline normal underline-hover green"
+          href="https://www.color-blindness.com/color-blindness-tools/">color blindness</a><br>
+          <a target="_blank" rel="noopener noreferrer" class="no-underline normal underline-hover green"
+          href="https://www.c82.net/werner/">werner’s nomenclature of colours</a>
+        </div>
+      </div>
+    </main>
+  </section>
+      <div data-bind="component: 'footer'"></div>
+</body>
+</html>

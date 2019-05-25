@@ -6,24 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>animation</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="content/icons/favicon64.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <script defer src="src/script.js"></script>
 </head>
 
-<body class="bg-near-white debug">
-  <section class="mv4-ns ph4-ns mv3-m ph3-m mv3 ph3">
+<body class="bg-near-white">
+  <section class="pa5-l pa4-m pa3">
     <div data-bind="component: 'header'"></div>
   </section>
-  <section>
+  <section class="ph5-l ph4-m ph3">
     <main>
       <div class="cf ph3-ns">
         <!--animation in sigle column-->
-        <div class="fl w-100 ph2-ns ph3 flex flex-column tc">
-          <div class="ph4-ns pb4-ns pb4 mw-3-ns">
+        <div class="fl w-100 tc">
+          <div class="ph4-ns pb4 mw-3-ns">
             <img  class="w-50-ns w-100 w-70-m" src="content/happy_gif.gif" alt="Animation
             of two hands clapping">
           </div>
-          <div class="ph4-ns pb4-ns pb4 mw-3-ns">
+          <div class="ph4-ns pb4 mw-3-ns">
             <img  class="w-50-ns w-100 w-70-m" src="content/lighter.gif" alt="Animation
             of one hand lighter a zippo lighter">
           </div>
@@ -31,5 +34,6 @@
       </div>
     </main>
   </section>
+    <div data-bind="component: 'footer'"></div>
 </body>
 </html>
