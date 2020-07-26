@@ -1,10 +1,12 @@
 const headerHTML = `
-<header class="pv4-ns">
-  <h1><a class="f2-ns f1 lh-title normal no-underline dim dark-gray" href="me.html">δyogurt</a></h1>
-  <nav class="db-ns dn">
-    <a class="no-underline dim f2 lh-copy normal dark-gray mr4" href="index.html">illustration</a>
-    <a class="no-underline dim f2 lh-copy normal dark-gray mr4" href="animation.html">animation</a>
-    <a class="no-underline dim f2 lh-copy normal dark-gray" href="resources.html">resources</a>
+<header>
+  <h1 class="f2-ns f2 pv2 mb5 normal">
+  <a class="no-underline dark-gray" href="info.html">Diogo Matias</a>
+  </h1>
+  <nav class="f2-ns f2 pv2 mb3 normal">
+    <a class="no-underline dark-gray mr5" href="index.html">Illustration</a>
+    <a class="no-underline dark-gray mr5" href="animation.html">Animation</a>
+    <a class="no-underline dark-gray" href="archive.html">Archive</a>
   </nav>
   <!--mobile nav menu-->
   <nav class="db dn-l dn-m dn-ns">
@@ -13,7 +15,7 @@ const headerHTML = `
       <div class="flex flex-column pt4">
         <a class="no-underline dim f2 lh-copy normal dark-gray" href="index.html">illustration</a>
         <a class="no-underline dim f2 lh-copy normal dark-gray" href="animation.html">animation</a>
-        <a class="no-underline dim f2 lh-copy normal dark-gray" href="resources.html">resources</a>
+        <a class="no-underline dim f2 lh-copy normal dark-gray" href="archive.html">resources</a>
       </div>
     </div>
   </nav>
