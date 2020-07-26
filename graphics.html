@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graphics</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="content/icons/favicon64.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script defer src="src/script.js"></script>
+</head>
+
+<body class="white flex flex-column pa3 pa4-l">
+  <!--large nav menu-->
+  <div data-bind="component: 'header'"></div>
+  <main class="pv2 pv5-l">
+      <div class="fl w-100 w-100-m w-50-l pr2-l">
+        <img class="mb2 mb3-l db" src="content/graphics/congento_icons.jpg" alt="A collection of icons for the CONGENTO project.">
+      </div>
+      <div class="fl w-100 w-100-m w-50-l near-black">
+        <p class="f4 f3-m f2-l lh-copy measure-l measure-wide-m" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">A collection of icons inspired by the <a target="_blank" rel="noopener noreferrer" href="https://congento.org/our-logo/" class="link no-underline near-black hover-bg-light-gray">logo of CONGENTO°</a>, a project that offers customized services in animal research. They represent several animal models and services provided by this project and have been used on the main website, <a target="_blank" rel="noopener noreferrer" class="link no-underline near-black hover-bg-light-gray" href="content/congento_interactive_pdf.pdf">printed materials°</a>, and general communication.</p>
+      </div>
+  </main>
+  <div data-bind="component: 'footer'"></div>
+</body>
+</html>

@@ -1,24 +1,24 @@
 const headerHTML = `
-<header>
-  <h1 class="f2-ns f2 pv2 mb5 normal">
-  <a class="no-underline dark-gray" href="info.html">Diogo Matias</a>
+<header class="ph2-l" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
+  <h1 class="f3 f2-l pv2 mb3-l normal">
+  <a class="dim no-underline dark-gray" href="info.html">Diogo Matias</a>
   </h1>
-  <nav class="f2-ns f2 pv2 mb3 normal">
-    <a class="no-underline dark-gray mr5" href="index.html">Illustration</a>
-    <a class="no-underline dark-gray mr5" href="animation.html">Animation</a>
-    <a class="no-underline dark-gray" href="archive.html">Archive</a>
+  <nav class="f3 f2-l pv2 mb3-ns normal lh-copy dn db-l">
+    <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="index.html">Illustration</a>
+    <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="animation.html">Animation</a>
+    <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="graphics.html">Graphics</a>
+    <a class="dim no-underline dark-gray" href="archive.html">Archive</a>
   </nav>
   <!--mobile nav menu-->
-  <nav class="db dn-l dn-m dn-ns">
-    <div class="f2 dim pointer" onclick="open_menu()">menu</div>
+    <div class="f3 dark-gray dim pointer pb2 db dn-l" onclick="open_menu()">Menu</div>
     <div id="mobile_menu_links" class="dn">
-      <div class="flex flex-column pt4">
-        <a class="no-underline dim f2 lh-copy normal dark-gray" href="index.html">illustration</a>
-        <a class="no-underline dim f2 lh-copy normal dark-gray" href="animation.html">animation</a>
-        <a class="no-underline dim f2 lh-copy normal dark-gray" href="archive.html">resources</a>
-      </div>
+      <nav class="flex flex-column pt2 f3 normal">
+        <a class="f3 normal no-underline dim f2 lh-copy normal dark-gray" href="index.html">Illustration</a>
+        <a class="f3 normal no-underline dim f2 lh-copy normal dark-gray" href="animation.html">Animation</a>
+        <a class="f3 normal no-underline dim f2 lh-copy normal dark-gray" href="graphics.html">Graphics</a>
+        <a class="f3 normal no-underline dim f2 lh-copy normal dark-gray" href="archive.html">Archive</a>
+      </nav>
     </div>
-  </nav>
 </header>
 `;
 
