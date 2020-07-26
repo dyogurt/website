@@ -24,10 +24,9 @@ const headerHTML = `
 `;
 
 const footerHTML = `
-<footer class="ph5-l ph4-m ph3">
-  <div class="w-100 f3-ns f4 measure-wide lh-copy pb4-l pb3-m pb2">
-    <p>made with <a href="http://tachyons.io/" class="no-underline normal underline-hover green">Tachyons</a></p>
-  </div>
+<footer class="pv2 pv4-ns ">
+  <div class="pa2 f4 f3-m f2-l dark-gray lh-copy measure-l measure-wide-m" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
+    <a class="ink no-underline near-black hover-bg-light-gray" href="mailto:diogo.fm.matias@gmail.com">diogo.fm.matias@gmail.com</a>
 </footer>
 `;
 
