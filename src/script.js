@@ -10,7 +10,7 @@ const headerHTML = `
     <a class="dim no-underline dark-gray" href="archive.html">Archive</a>
   </nav>
   <!--mobile nav menu-->
-    <div class="f4 f3-m f2-l dark-gray dim pointer mb4 dn-l" onclick="open_menu()">Menu</div>
+    <div class="f4 f3-m f2-l dark-gray dim mb4 dn-l" onclick="open_menu()">Menu</div>
     <div id="mobile_menu_links" class="dn dn-l">
       <nav class="flex flex-column mb3 f4 f3-m f2-l lh-copy normal">
         <a class="no-underline dim dark-gray" href="index.html">Illustration</a>
