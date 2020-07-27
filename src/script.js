@@ -1,5 +1,5 @@
 const headerHTML = `
-<header class="ph2-l" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
+<header style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
   <h1 class="f3 f2-ns pb2-m pb3-l normal dn db-l">
   <a class="dim no-underline dark-gray" href="info.html">Diogo Matias</a>
   </h1>
@@ -10,22 +10,22 @@ const headerHTML = `
     <a class="dim no-underline dark-gray" href="archive.html">Archive</a>
   </nav>
   <!--mobile nav menu-->
-    <div class="f3 f2-m dark-gray dim pointer mt2 pa2 dn-l" onclick="open_menu()">Menu</div>
+    <div class="f4 f3-m f2-l dark-gray dim pointer mb4 dn-l" onclick="open_menu()">Menu</div>
     <div id="mobile_menu_links" class="dn dn-l">
-      <nav class="flex flex-column mt2 pa2 f3 normal">
-        <a class="f3 f2-m normal no-underline dim f2 lh-copy normal dark-gray" href="index.html">Illustration</a>
-        <a class="f3 f2-m normal no-underline dim f2 lh-copy normal dark-gray" href="animation.html">Animation</a>
-        <a class="f3 f2-m normal no-underline dim f2 lh-copy normal dark-gray" href="graphics.html">Graphics</a>
-        <a class="f3 f2-m normal no-underline dim f2 lh-copy normal dark-gray" href="archive.html">Archive</a>
-        <a class="f3 f2-m normal no-underline dim f2 lh-copy normal dark-gray" href="info.html">Info</a>
+      <nav class="flex flex-column mb3 f4 f3-m f2-l lh-copy normal">
+        <a class="no-underline dim dark-gray" href="index.html">Illustration</a>
+        <a class="no-underline dim dark-gray" href="animation.html">Animation</a>
+        <a class="no-underline dim dark-gray" href="graphics.html">Graphics</a>
+        <a class="no-underline dim dark-gray" href="archive.html">Archive</a>
+        <a class="no-underline dim dark-gray" href="info.html">Info</a>
       </nav>
     </div>
 </header>
 `;
 
 const footerHTML = `
-<footer class="pv2 pv4-ns ">
-  <div class="pa2 f4 f3-m f2-l dark-gray lh-copy measure-l measure-wide-m" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
+<footer class="">
+  <div class="pv2 f4 f3-m f2-l dark-gray lh-copy measure-l measure-wide-m" style="font-family:-apple-system, BlinkMacSystemFont,'avenir next', avenir,'helvetica neue', helvetica,ubuntu,roboto, noto,'segoe ui', arial,sans-serif;">
     <a class="ink no-underline near-black hover-bg-light-gray" href="mailto:diogo.fm.matias@gmail.com">diogo.fm.matias@gmail.com</a>
 </footer>
 `;
