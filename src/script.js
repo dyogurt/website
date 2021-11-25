@@ -15,7 +15,6 @@ const headerHTML = `
       <nav class="flex flex-column mb3 f4 f3-m f2-l lh-copy normal">
         <a class="no-underline dim dark-gray mb2" href="index.html">Illustration</a>
         <a class="no-underline dim dark-gray mb2" href="animation.html">Animation</a>
-        <a class="no-underline dim dark-gray mb2" href="graphics.html">Graphics</a>
         <a class="no-underline dim dark-gray mb2" href="archive.html">Archive</a>
         <a class="no-underline dim dark-gray mb2" href="info.html">Info</a>
       </nav>
