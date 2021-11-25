@@ -6,7 +6,6 @@ const headerHTML = `
   <nav class="f3 f2-ns pv2 mb3-ns normal lh-copy dn db-l">
     <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="index.html">Illustration</a>
     <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="animation.html">Animation</a>
-    <a class="dim no-underline dark-gray mr3 mr4-m mr5-l" href="graphics.html">Graphics</a>
     <a class="dim no-underline dark-gray" href="archive.html">Archive</a>
   </nav>
   <!--mobile nav menu-->
