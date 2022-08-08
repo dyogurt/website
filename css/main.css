@@ -1,3 +1,43 @@
+html {
+	font-family: 'IBM Plex Serif', serif;
+}
+
+body {
+	margin: auto;
+	padding: 8vw;
+	max-width: 60ch;
+	background: antiquewhite;
+	font-size: 18px; /* Fallback value */
+	font-size: clamp(0.875rem, 0.5vw + 0.8rem, 1.625rem);
+}
+
+h1 {
+	margin-bottom: 2em;
+	font-weight: 400;
+	line-height: 1.05;
+}
+
+p {
+	line-height: 1.6;
+	hyphens: auto;
+}
+
+a {
+	color: inherit;
+	text-underline-offset: .2em;
+	text-decoration-thickness: 0.05rem;
+}
+
 img {
 	max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #1C1D1F;
+		color: moccasin;
+	}
+	img {
+    opacity: .75;
+  }
 }
