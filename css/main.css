@@ -2,58 +2,69 @@
 /* Let your main text size be decided by the browser or the user settings */
 
 body {
-	margin: auto;
-	padding: 1rem;
-	max-width: 65ch;
-	background: antiquewhite;
+	background: linen;
+	font-size: 1.25rem;
+	line-height: 1.6;
 }
 
-main {
-	font-size: 1.125rem;
-}
-
-h1 {
-	font-weight: 500;
-	margin-bottom: 2.5rem;
-	line-height: 1;
-}
-
-p {
-	line-height: 1.65;
+article {
+	margin-inline: auto;
+	padding: .5em;
+	max-width: 26em;
+	overflow-wrap: break-word;
 	hyphens: auto;
 }
 
+h1, h2 {
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: 2.618rem;
+}
+
+h2 {
+	font-size: 1.618rem;
+}
+
+p {
+	margin-bottom: 1.25em;
+	margin-top: 0;
+}
+
 ul {
-	padding-left: 1.25rem;
+	list-style: none;
+	padding-left: 1.25em;
 }
 
 li {
-	margin-bottom: 1.25rem;
-}
-
-hr {
-	margin-top: 2.75rem;
-	margin-bottom: 1.25rem;
+	margin-bottom: 1.25em;
+	hyphens: auto;
+	overflow-wrap: break-word;
 }
 
 a {
 	color: inherit;
-	text-underline-offset: .2rem;
-	text-decoration-thickness: 0.05rem;
+	text-underline-offset: .15em;
+	text-decoration-thickness: .06em;
 }
 
 img {
+	display: block;
+	margin: min(2.5rem, 4vh) auto;
 	max-width: 100%;
+	max-height: 80vh;
 }
 
 footer {
-	margin-top: 4.5rem;
+	margin-top: 4em;
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: #1C1D1F;
-		color: moccasin;
+		background: black;
+		color: silver;
 	}
 	img {
     opacity: .85;
