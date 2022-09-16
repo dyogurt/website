@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- hello, welcome to the source code -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Person trying to notice things">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Hexagons in nature</title>
+</head>
+<body>
+  <article>
+    <header>
+    	<h1>Hexagons in nature</h1>
+      <p><time datetime="2022-08-15">Mon 15 Aug</time> ☀︎</p>
+    </header>
+    <p>Recently I watched one of Jen Simmon's engaging CSS Grid tutorials about <a href="https://www.youtube.com/watch?v=EashgVqboWo" title="A video explaining how the CSS Grid lets us create overlaping in web design."><em>Overlap on the Web</em></a>. It made me wonder if I could use this approach to simulate duotone <a href="https://en.wikipedia.org/wiki/Risograph" title="Information about the risograph printing process, techniques, and use cases.">risograph printing.</a></p>
+    <h2>Risograph printing?</h2>
+    <p>Riso is a low-cost, low-energy, and sustainable printing method that combines screen printing and photocopying essences, printing one colour at a time and building layers to create a finished artwork.</p>
+    <p>To test this web-riso approach, I'm using an illustration of the planet Saturn ♄ and the <a href="https://solarsystem.nasa.gov/missions/cassini/overview/" title="NASA website page with an overview of the Cassini-Huygens mission"><em>Cassini–Huygens</em></a> space-research mission's spacecraft. The original artwork has two colour channels seen here:</p>
+    <div id="not-overlapping">
+      <img id="riso1-normal" src="content/saturn-riso-color-1.webp" alt="First color channel of an illustration of saturn an one of its moons." loading="lazy">
+      <img id="riso2-normal" src="content/saturn-riso-color-2.webp" alt="Second color channel of an illustration of saturn an one of its moons." loading="lazy">
+    </div>
+    <div id="overlapping">
+      <img id="color1" src="content/saturn-riso-color-1.webp" alt="First color channel of an illustration of saturn an one of its moons." loading="lazy">
+      <img id="color2" src="content/saturn-riso-color-2.webp" alt="Second color channel of an illustration of saturn an one of its moons." loading="lazy">
+    </div>
+  </article>
+</body>
+</html>
