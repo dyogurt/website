@@ -12,7 +12,12 @@
 	<body>
     <h1>Diogo Matias</h1>
     <p>Person trying to notice things and do stuff.</p>
-    <img src="images/leksand-lake.webp" width="800" height="600" alt="A person walks on a sandy lake shore during a cloudy day." /> <!--width an height attributes on this image set a 4 by 3 aspect ratio to reduce Cumulative Layout Shift-->
+	<img 
+	srcset="images/leksand-lake-400w.jpg 400w, images/leksand-lake-800w.jpg 800w, images/leksand-lake-1200w.jpg 1200w"
+	sizes="(max-width: 500px) 400px, (max-width: 900px) 800px, 1200px"
+	src="images/leksand-lake-1200w.jpg"
+	alt="A person walking on a sandy lake shore during a cloudy day."
+	width="1200" height="900">
     <p>Updated on <time datetime="2024-01-20">20 January 2024</time>. Sunny but cold.</p>
     <nav>
 		  <ul>
