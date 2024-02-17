@@ -4,6 +4,12 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    max-inline-size: 40em;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 5vw, 2rem);
+}
+
 /* More readable links */
 @supports (text-underline-offset: 0.15em) {
     a:link, a:visited {
