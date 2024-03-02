@@ -10,6 +10,11 @@ body {
     padding-inline: clamp(1rem, 5vw, 2rem);
 }
 
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 /* More readable links */
 @supports (text-underline-offset: 0.15em) {
     a:link, a:visited {
@@ -23,9 +28,4 @@ body {
       text-decoration-thickness: 0.2em;
       text-underline-offset: 0.15em;
     }
-}
-
-img {
-    max-inline-size: 100%;
-    block-size: auto;
 }
