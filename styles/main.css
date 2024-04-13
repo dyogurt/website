@@ -1,7 +1,10 @@
 html {
     font: 1.25rem sans-serif;
-    line-height: 1.5;
     text-rendering: optimizeLegibility;
+}
+
+p {
+    line-height: 1.5;
 }
 
 body {
