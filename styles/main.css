@@ -1,14 +1,6 @@
-html {
+:root {
     text-rendering: optimizeLegibility;
-}
-
-body {
     max-inline-size: 40em;
-    margin-inline: auto;
-    padding-inline: clamp(1rem, 5vw, 2rem);
-
-    line-height: 1.5;
-    font: 1.25rem sans-serif;
 }
 
 img {
@@ -16,7 +8,11 @@ img {
     block-size: auto;
 }
 
-/* More readable links */
+code {
+  font-family: monospace;
+}
+
+/* Link style */
 @supports (text-underline-offset: 0.15em) {
     a:link, a:visited {
       text-decoration-thickness: 0.1em;
