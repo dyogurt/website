@@ -1,6 +1,6 @@
 :root {
     text-rendering: optimizeLegibility;
-    max-inline-size: 40em;
+    max-inline-size: 80ch;
 }
 
 img {
