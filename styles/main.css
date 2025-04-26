@@ -12,6 +12,10 @@ code {
   font-family: monospace;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 /* Link style */
 @supports (text-underline-offset: 0.15em) {
     a:link, a:visited {
