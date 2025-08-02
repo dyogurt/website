@@ -1,32 +1,25 @@
-:root {
-    text-rendering: optimizeLegibility;
-    max-inline-size: 80ch;
-}
-
-img {
-    max-inline-size: 100%;
-    block-size: auto;
-}
-
-code {
-  font-family: monospace;
-}
-
 p {
   text-wrap: pretty;
+  max-inline-size: 40em;
+}
+
+img, 
+video {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 /* Link style */
 @supports (text-underline-offset: 0.15em) {
-    a:link, a:visited {
-      text-decoration-thickness: 0.1em;
-      text-underline-offset: 0.15em;
-    }
+  a:link, a:visited {
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.15em;
+  }
 }
 
 @supports (text-underline-offset: 0.15em) {
-    a:hover, a:focus {
-      text-decoration-thickness: 0.2em;
-      text-underline-offset: 0.15em;
-    }
+  a:hover, a:focus {
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 0.15em;
+  }
 }
