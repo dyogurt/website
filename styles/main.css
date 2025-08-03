@@ -9,6 +9,27 @@ video {
   block-size: auto;
 }
 
+/* Main navigation */
+nav > ul {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border: 0.1em dashed;
+  border-radius: 1em;
+  padding: 0.75em 1.5em;
+}
+
 /* Link style */
 @supports (text-underline-offset: 0.15em) {
   a:link, a:visited {
