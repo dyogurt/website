@@ -1,12 +1,31 @@
-p {
-  text-wrap: pretty;
-  max-inline-size: 40em;
+/* Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-img, 
-video {
-  max-inline-size: 100%;
-  block-size: auto;
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  /* Add accessible text spacing as per WCAG 2.1 SC 1.4.12 (AA) */
+  line-height: 1.5;
+  text-wrap: pretty;
+  /* Improve line wrapping */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Add accessible text spacing as per WCAG 2.1 SC 1.4.12 (AA) */
+  line-height: 1.1;
+  /* Improve line wrapping */
+  text-wrap: balance;
 }
 
 /* Main navigation */
@@ -22,7 +41,6 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   border: 0.1em dashed;
@@ -37,10 +55,9 @@ nav > ul > li > a {
     text-underline-offset: 0.15em;
   }
 }
-
 @supports (text-underline-offset: 0.15em) {
   a:hover, a:focus {
     text-decoration-thickness: 0.2em;
     text-underline-offset: 0.15em;
   }
-}
+  
