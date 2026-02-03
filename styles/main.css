@@ -15,14 +15,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  /* Add accessible text spacing as per WCAG 2.1 SC 1.4.12 (AA) */
   line-height: 1.5;
   text-wrap: pretty;
   /* Improve line wrapping */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* Add accessible text spacing as per WCAG 2.1 SC 1.4.12 (AA) */
   line-height: 1.1;
   /* Improve line wrapping */
   text-wrap: balance;
