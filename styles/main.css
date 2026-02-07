@@ -21,6 +21,7 @@ p {
   text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
   line-height: 1.1;
   text-wrap: balance;
 }
@@ -41,6 +42,7 @@ nav > ul {
 
 nav > ul > li {
   list-style: none;
+  font-family: sans-serif;
 }
 
 nav > ul > li > a {
@@ -49,6 +51,23 @@ nav > ul > li > a {
   border: 0.1em dashed;
   border-radius: 1em;
   padding: 0.75em 1.5em;
+}
+
+/* Link to the main content area */
+.skip-link {
+  position: fixed;
+  top: -30em; /* Fallback for Internet Explorer 11*/
+  inset-block-start: -30em;
+  left: 0.25em; /* Fallback for Internet Explorer 11*/
+  inset-inline-start: 0.25em;
+  background-color: Canvas;
+  border: 0.1em solid;
+  border-radius: 1em;
+  padding: 0.75em 1.5em;
+  z-index: 10;
+}
+.skip-link:focus {
+  top: 0.25em;
 }
 
 /* Link style */
