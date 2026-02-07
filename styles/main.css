@@ -6,7 +6,8 @@
 /* Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  block-size: auto;
+  max-inline-size: 100%;
 }
 
 /* Avoid text overflows */
@@ -14,16 +15,20 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+/* Improve line spacing and wrapping */
 p {
   line-height: 1.5;
   text-wrap: pretty;
-  /* Improve line wrapping */
 }
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  /* Improve line wrapping */
   text-wrap: balance;
+}
+
+/* Improve line length for readability */
+
+p, li {
+  max-inline-size: 40em;
 }
 
 /* Main navigation */
