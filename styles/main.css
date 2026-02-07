@@ -82,4 +82,10 @@ nav > ul > li > a {
     text-decoration-thickness: 0.2em;
     text-underline-offset: 0.15em;
   }
-  
+
+/* Contrast preference */
+@media (prefers-contrast: more) {
+  nav > ul > li > a {
+  border: solid;
+  }
+}
