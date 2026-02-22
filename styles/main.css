@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Improve line length for readability */
 
-p, li {
-  max-inline-size: 40em;
+article {
+  max-inline-size: 45em;
 }
 
 /* Main navigation */
