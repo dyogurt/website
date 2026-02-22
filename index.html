@@ -3,13 +3,20 @@
 	<head>
 		<!--
 		Hello! Feel free to explore and borrow any code.
-		Let me know if you find anything that could be written with better semantics or structure.
+		Let me know if you find anything that could be written with better semantics or in a more accessibility way.
 		-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home page</title>
 		<meta name="description" content="The personal website of Diogo Matias.">
 		<meta name="color-scheme" content="light dark">
+		<meta property="og:title" content="Diogo Matias’ personal website">
+		<meta property="og:image" content="https://diogomatias.net/images/me.webp">
+    <meta property="og:url" content="https://diogomatias.net/">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="498">
+    <meta property="og:image:alt" content="A person standing in a forest during a sunny day.">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="icon" type="image/png" href="../images/favicon.png">
 	</head>
@@ -25,7 +32,7 @@
 		</nav>
 		<main id="main">
 			<header>
-				<hgroup id="document-title">
+				<hgroup>
 					<h1>Hello, I’m Diogo.</h1>
 					<p>This is my journal, an archive for illustrations, and a sandbox for learning web development.</p>
 				</hgroup>
@@ -39,16 +46,26 @@
         >
 			</header>
 			<aside>
-					<p>Updated on <time datetime="2026-02-12">12 February 2026</time>, on a brisk night.</p>
+					<p>Updated on <time datetime="2026-02-22">22 February 2026</time>, on a cloudy but bright afternoon.</p>
 			</aside>
-			<h2>My interests</h2>
+			<hgroup>
+				<h2>Currently</h2>
+				<p>Inspired by the <a href="https://sive.rs/nowff">now page movement</a></p>
+			</hgroup>
+				<ul>
+					<li>Living in Trieste, Italy</li>
+					<li>Looking for local community innitiatives</li>
+					<li>Going to the <a href="https://www.openstreetmap.org/node/13181117353/">market at S. Antonio’s public square</a> most Saturdays</li>
+					<li>Preparing to renovate an apartment</li>
+				</ul>
+			<h2>Interests</h2>
 				<ul>
 					<li>Digital archives</li>
 					<li>Visual design history</li>
 					<li>Small, indie web</li>
 					<li>Solutions journalism</li>
 				</ul>
-			<h2>Work</h2>
+			<h2>Job</h2>
 		  <p>I design science communication materials for projects funded by the European Union.</p>
 			<h2>Where else to find me on the web</h2>
 				<ul>
