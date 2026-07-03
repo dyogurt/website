@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+/* Improve readibility */
+body {
+  text-rendering: optimizeLegibility;
+}
+
 /* Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
@@ -21,15 +26,15 @@ p {
   text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: monospace;
   line-height: 1.1;
   text-wrap: balance;
 }
 
 /* Improve line length for readability */
 
-article {
-  max-inline-size: 45em;
+p {
+  max-inline-size: 60ch;
 }
 
 /* Main navigation */
