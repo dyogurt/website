@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* Improve readability */
+/* Improve overall legibility */
 body {
   text-rendering: optimizeLegibility;
 }
@@ -20,21 +20,16 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* Improve line spacing and wrapping */
-p {
+/* Improve copy readability */
+p, ol, ul {
   line-height: 1.5;
   text-wrap: pretty;
+  max-inline-size: 60ch;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
   line-height: 1.1;
   text-wrap: balance;
-}
-
-/* Improve line length for readability */
-
-p {
-  max-inline-size: 60ch;
 }
 
 /* Main navigation */
