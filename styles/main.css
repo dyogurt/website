@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* Improve readibility */
+/* Improve readability */
 body {
   text-rendering: optimizeLegibility;
 }
@@ -58,14 +58,14 @@ nav > ul > li > a {
   padding: 0.75em 1.5em;
 }
 
-/* Link to the main content area */
+/* Technique G1: Adding a link at the top of each page that goes directly to the main content area */
 .skip-link {
   position: fixed;
   top: -30em; /* Fallback for Internet Explorer 11*/
-  inset-block-start: -30em;
   left: 0.25em; /* Fallback for Internet Explorer 11*/
+  inset-block-start: -30em;
   inset-inline-start: 0.25em;
-  background-color: Canvas;
+  background-color: ;
   border: 0.1em solid;
   border-radius: 1em;
   padding: 0.75em 1.5em;
