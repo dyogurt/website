@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <!--
 Hello! Feel free to explore and borrow any code.
 Let me know if you find anything that could be written with better semantics or in a more accessible way.
 -->
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title that describes the topic of this webpage. SC 2.4.2 -->
 		<title>Home page of Diogo.</title>
 		<meta name="description" content="The personal website of Diogo Matias.">
 		<meta name="color-scheme" content="light dark">
@@ -21,69 +22,82 @@ Let me know if you find anything that could be written with better semantics or 
 		<link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 	<body>
-		<a href="#main" class="skip-link">Skip to main content</a>
-		<nav aria-label="Main">
-					<ul>
-						<li><a href="/notebook/">Notebook</a></li>
-						<li><a href="/actions/">Actions</a></li>
-						<li><a href="/wildcat/">Wildcat</a></li>
-						<li><a href="/philosophy/">Philosophy</a></li>
-					</ul>
-		</nav>
+	  <!-- Header for navigation and introduction -->
+		<header role="banner">
+			<!-- A "skip" link that goes directly to the main content area. SC 2.4.1 -->
+			<a href="#main" class="skip-link">Skip to main content</a>
+			<nav aria-label="Main">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="notebook.html">Notebook</a></li>
+					<li><a href="actions.html">Actions</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="philosophy.html">Philosophy</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main id="main">
 			<header>
 				<hgroup>
 					<h1>Hello, I’m Diogo.</h1>
-					<p>This is my notebook, an archive for illustrations, and a place for learning web development.</p>
+					<p>This is my notebook, an archive for projects, and a place for learning about the web.</p>
 				</hgroup>
-				<img
-          src="images/me.webp"
-          alt="Myself walking by a stream at the bottom of a lush ravine during a sunny day.."
-          loading="eager"
-          fetchpriority="high"
-          width="400"
- 					height="498"
-        >
 			</header>
-			<aside>
-					<p>Updated on <time datetime="2026-07-04">Saturday 4 July</time>, on a warm morning.</p>
+			<img
+        src="images/me.webp"
+        alt="Myself walking by a stream at the bottom of a lush ravine during a sunny day.."
+        loading="eager"
+        fetchpriority="high"
+        width="400"
+				height="498">
+			<aside role="note">
+				<p>Updated on a sunny and warm afternoon on <time datetime="2026-07-04">Saturday, July 25.</time> <span aria-hidden="true">☀</span></p>
 			</aside>
-			<hgroup>
-				<h2>Currently</h2>
-				<p>Inspired by the <a href="https://sive.rs/nowff">now page movement</a></p>
-			</hgroup>
+			<h2>Now</h2>
 				<ul>
-					<li>Living in Trieste, Italy</li>
-					<li>Looking for local community initiatives</li>
-					<li>Going to the <a href="https://www.openstreetmap.org/node/13181117353/">market at S. Antonio’s public square</a> most Saturdays</li>
-					<li>Preparing to renovate an apartment</li>
+					<li>Having coffee in Trieste</li>
+					<li>Exploring nature with the <a href="https://caisag.ts.it/gruppo-tutela-ambiente-montano-tam/" lang="it">Gruppo Tutela Ambiente Montano - TAM</span></a></li>
+					<li>Going to the <a href="https://www.openstreetmap.org/node/13181117353/">farmer’s market at the <span lang="it">Piazza Sant’Antonio</span></a> most Saturdays</li>
+					<li>Taking the W3C’s HTML5 and CSS Fundamentals course on edX</li>
+					<li>Preparing to move to a new apartment</li>
 				</ul>
 			<h2>Interests</h2>
 				<ul>
-					<li>Digital archives</li>
+					<li>Citizen science</li>
 					<li>Visual design history</li>
-					<li>Small, indie web</li>
-					<li>Solutions journalism</li>
+					<li>Web standards and digital accessibility</li>
+					<li>Digital archives</li>
 				</ul>
 			<h2>Job</h2>
 		  <p>I design science communication materials for projects funded by the European Union.</p>
-			<h2>Where else to find me on the web</h2>
+			<h2>Elsewere on the web</h2>
 				<ul>
 					<li><a href="https://www.are.na/diogo-matias/channels" rel="me">Are.na</a> channels</li>
 					<li><a href="https://archive.org/details/fav-dyogurt/" rel="me">Internet Archive</a> favourites</li>
 					<li><a href="https://bandcamp.com/diogo-m/" rel="me">Bandcamp</a> music collection</li>
 					<li><a href="https://www.inaturalist.org/people/diogofmatias/" rel="me">iNaturalist</a> observations</li>
 				</ul>
-			<h2>How we can talk</h2>
-		  <p>You can send an email to <a href="mailto:diogo.fm.matias@gmail.com">diogo.fm.matias@gmail.com</a>.</p>
 		</main>
-		<aside>
-			<div class="inat-widget">
-  			<script src="https://www.inaturalist.org/observations/diogofmatias.widget?layout=large&limit=1&order=desc&order_by=observed_on"></script>
-			</div>
-		</aside>
 		<footer>
-			<p>Content on this website is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" rel="license">Attribution-ShareAlike 4.0 International</a>.</p>
+			<address>
+  			<p>You can send me a message at</p>
+  			<a href="mailto:diogo.fm.matias@gmail.com">diogo.fm.matias@gmail.com</a>
+			</address>
+			<a href="https://recycled.cloud/">
+				<img
+					src="images/green_web_foundation-diogomatias.net.png"
+					alt="This website runs on green hosting. Verified by thegreenwebfoundation.org"
+					loading="lazy"
+					width="200"
+					height="95"></a>
+			<a href="https://gossipsweb.net">
+				<img
+					src="images/twwmwh-blue.jpg"
+					alt="This website was made with hands."
+					loading="lazy"
+					width="343"
+					height="46"></a>
+			<p>Content on this website is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.</p>
 		</footer>
 	</body>
 </html>

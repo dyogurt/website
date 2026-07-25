@@ -3,9 +3,22 @@
   box-sizing: border-box;
 }
 
-/* Improve overall legibility */
+/* Improve overall legibility and avoid text overflows */
 body {
   text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.5;
+}
+
+/* Improve copy readability */
+p {
+  text-wrap: pretty;
+  max-inline-size: 60ch;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 /* Improve media defaults */
@@ -13,23 +26,6 @@ img, picture, video, canvas, svg {
   display: block;
   block-size: auto;
   max-inline-size: 100%;
-}
-
-/* Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* Improve copy readability */
-p, ol, ul {
-  line-height: 1.5;
-  text-wrap: pretty;
-  max-inline-size: 60ch;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: monospace;
-  line-height: 1.1;
-  text-wrap: balance;
 }
 
 /* Main navigation */
@@ -42,7 +38,6 @@ nav > ul {
 
 nav > ul > li {
   list-style: none;
-  font-family: sans-serif;
 }
 
 nav > ul > li > a {
@@ -60,7 +55,7 @@ nav > ul > li > a {
   left: 0.25em; /* Fallback for Internet Explorer 11*/
   inset-block-start: -30em;
   inset-inline-start: 0.25em;
-  background-color: ;
+  background-color: canvas;
   border: 0.1em solid;
   border-radius: 1em;
   padding: 0.75em 1.5em;
@@ -68,6 +63,15 @@ nav > ul > li > a {
 }
 .skip-link:focus {
   top: 0.25em;
+}
+
+/* Footer layout */
+footer {
+  margin-block-start: 4.25rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 /* Link style */
