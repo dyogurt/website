@@ -5,6 +5,7 @@
 
 :root {
   color-scheme: light dark;
+  --bg: light-dark(oldlace, darkgreen);
 }
 
 /* Improve overall legibility and avoid text overflows */
@@ -12,6 +13,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
   hyphens: auto;
+  background-color: var(--bg);
 }
 
 /* Improve copy readability */
@@ -55,14 +57,14 @@ nav > ul > li > a {
   padding: 0.75em 1.5em;
 }
 
-/* Technique G1: Adding a link at the top of each page that goes directly to the main content area */
+/* Sufficient technique G1 for SC 2.4.1: Adding a link at the top of each page that goes directly to the main content area */
 .skip-link {
   position: fixed;
   top: -30em; /* Fallback for Internet Explorer 11*/
   left: 0.25em; /* Fallback for Internet Explorer 11*/
   inset-block-start: -30em;
   inset-inline-start: 0.25em;
-  background-color: canvas;
+  background-color: var(--bg);
   border: 0.1em solid;
   border-radius: 1em;
   padding: 0.75em 1.5em;
