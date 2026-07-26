@@ -5,7 +5,7 @@
 
 :root {
   color-scheme: light dark;
-  --bg: light-dark(oldlace, darkgreen);
+  --bg: light-dark(oldlace, midnightblue);
 }
 
 /* Improve overall legibility and avoid text overflows */
