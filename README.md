@@ -1,3 +1,5 @@
-# My website
+# Version control for my personal website
 
-This repository hosts my website.
+You can access the website at https://diogomatias.net/
+
+The website is hosted by [Recycled Cloud](https://recycled.cloud/)
