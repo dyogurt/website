@@ -12,6 +12,7 @@ Let me know if you find anything that could be written with better semantics or 
 		<meta name="description" content="A list of things I would like to try on this website.">
 		<meta name="color-scheme" content="dark light">
 		<link rel="stylesheet" href="styles/main.css">
+		<script src="scripts/storage.js" defer></script>
 		<link rel="icon" type="image/png" href="media/favicon.png">
 	</head>
 	<body>
@@ -36,8 +37,13 @@ Let me know if you find anything that could be written with better semantics or 
 			<aside role="note">
 			<p>Updated on a cloudy noon on <time datetime="2026-07-26">Sunday, July 26.</time> <span aria-hidden="true">☁</span></p>
 			</aside>
-			<label for="notes">Notepad:</label>
-			<textarea id="notes" name="notes" rows="4" cols="64" placeholder="What you write here will remain until you close this tab."></textarea>
+			<label for="notepad">Notepad:</label>
+			<textarea
+				id="notepad"
+				name="notepad"
+				rows="4"
+				cols="52"
+				placeholder="Write down something"></textarea>
 			<ol>
 				<li>Validate all the recent code changes.</li>
 				<li>Write accessibility statement.</li>
@@ -58,7 +64,7 @@ Let me know if you find anything that could be written with better semantics or 
 		</main>
 		<footer>
 			<address>
-  			<p>You can send me a message at</p>
+  			You can send me a message at
   			<a href="mailto:diogo.fm.matias@gmail.com">diogo.fm.matias@gmail.com</a>
 			</address>
 			<a href="https://recycled.cloud/">

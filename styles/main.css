@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
-p {
+p, label {
   line-height: 1.5;
   text-wrap: pretty;
   max-inline-size: 60ch;
@@ -31,10 +31,11 @@ li {
 }
 
 /* Improve media defaults */
-img, picture, video, canvas, svg, label {
+img, picture, video, canvas, svg, textarea {
   display: block;
   block-size: auto;
   max-inline-size: 100%;
+  max-width: 100%;
 }
 
 /* Main navigation */
@@ -110,9 +111,3 @@ footer {
   border: solid;
   }
 }
-
-/* iNaturalist widget */
-.inat-widget { line-height: 1.5;}
-.inat-meta { line-height: 1.5; margin-block-start: 0.5em; }
-.inat-observation-body { padding-inline-start: 1em; }
-.inat-observation-image { max-width: 100%; }
