@@ -34,8 +34,8 @@ li {
 img, picture, video, canvas, svg, textarea {
   display: block;
   block-size: auto;
+  max-width: 100%; /* Fallback for browser that do not support */
   max-inline-size: 100%;
-  max-width: 100%;
 }
 
 /* Main navigation */
@@ -59,17 +59,19 @@ nav > ul {
 /* Sufficient technique G1 for SC 2.4.1: Adding a link at the top of each page that goes directly to the main content area */
 .skip-link {
   position: fixed;
-  top: -30em; /* Fallback for Internet Explorer 11*/
-  left: 0.25em; /* Fallback for Internet Explorer 11*/
+  /* Fallback for browsers that don’t support logical proprieties */
+  top: -30em;
+  left: 0.25em;
   inset-block-start: -30em;
   inset-inline-start: 0.25em;
   background-color: var(--bg);
   border: 0.1em solid;
   border-radius: 1em;
   padding: 0.75em 1.5em;
-  z-index: 10;
+  z-index: 1;
   &:focus {
     top: 0.25em;
+    inset-inline-start: 0.25em;
   }
 }
 

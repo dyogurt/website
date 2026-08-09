@@ -8,11 +8,14 @@ Let me know if you find anything that could be written with better semantics or 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Title that describes the topic of this webpage. SC 2.4.2 -->
-		<title>Home page of Diogo.</title>
-		<meta name="description" content="The personal website of Diogo Matias.">
+		<title>Diogo’s home.</title>
+		<meta name="description" content="A notebook, an archive for projects, and a place for learning about the web.">
 		<meta name="color-scheme" content="light dark">
-		<meta property="og:title" content="Diogo Matias’ personal website">
-		<meta property="og:image" content="https://diogomatias.net/media/me.webp">
+		<!-- Open Graph protocol for rendering a preview of the website -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Diogo’s home.">
+		<meta name="description" content="A notebook, an archive for projects, and a place for learning about the web.">
+		<meta property="og:image" content="https://diogomatias.net/media/media/barranco_de_los_cernicalos-480.webp">
     <meta property="og:url" content="https://diogomatias.net/">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="400">
@@ -20,6 +23,7 @@ Let me know if you find anything that could be written with better semantics or 
     <meta property="og:image:alt" content="Myself walking by a stream at the bottom of a lush ravine during a sunny day.">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="icon" type="image/png" href="media/favicon.png">
+		<link rel="canonical" href="https://diogomatias.net/">
 	</head>
 	<body>
 	  <!-- Header for navigation and introduction -->
@@ -37,56 +41,55 @@ Let me know if you find anything that could be written with better semantics or 
 			</nav>
 		</header>
 		<main id="main">
-			<article>
-				<header>
-					<hgroup>
-						<h1>Hello, I’m Diogo.</h1>
-						<p>This is my notebook, an archive for projects, and a place for learning about the web.</p>
-					</hgroup>
-				</header>
-				<img
-	        alt="Myself walking by a stream at the bottom of a lush ravine during a sunny day.."
-	        srcset="
-	        	media/barranco_de_los_cernicalos-300.webp 300w,
-	        	media/barranco_de_los_cernicalos-480.webp 380w,
-	        	media/barranco_de_los_cernicalos-600.webp 600w,
-	        	media/barranco_de_los_cernicalos-800.webp 800w,
-	        	media/barranco_de_los_cernicalos-1200.webp 1200w,
-	        "
-	        sizes="auto, 600px"
-	        loading="lazy"
-	        src="media/barranco_de_los_cernicalos.jpg"
-	        width="600"
-					height="600">
-				<aside role="note">
-					<p>Updated on a sunny and warm afternoon on <time datetime="2026-07-25">Saturday, July 25.</time> <span aria-hidden="true">☀</span></p>
-				</aside>
-				<h2>Now</h2>
-					<ul>
-						<li>Having coffee in Trieste.</li>
-						<li>Exploring nature with the <a href="https://caisag.ts.it/gruppo-tutela-ambiente-montano-tam/" lang="it">Gruppo Tutela Ambiente Montano - TAM</a>.</li>
-						<li>Going to the <a href="https://www.openstreetmap.org/node/13181117353/">farmer’s market at the <span lang="it">Piazza Sant’Antonio</span></a> most Saturdays.</li>
-						<li>Taking the W3C’s HTML5 and CSS Fundamentals course on edX.</li>
-						<li>Preparing to move to a new apartment.</li>
-					</ul>
-				<h2>Interests</h2>
-					<ul>
-						<li>Citizen science.</li>
-						<li>Visual design history.</li>
-						<li>Web standards and digital accessibility.</li>
-						<li>Digital archives.</li>
-					</ul>
-				<h2>Job</h2>
-			  <p>I design science communication materials for projects funded by the European Union.</p>
-				<h2>Elsewere on the web</h2>
-					<ul>
-						<li><a href="https://www.are.na/diogo-matias/channels" rel="me">Are.na</a> channels.</li>
-						<li><a href="https://archive.org/details/fav-dyogurt/" rel="me">Internet Archive</a> favourites.</li>
-						<li><a href="https://bandcamp.com/diogo-m/" rel="me">Bandcamp</a> music collection.</li>
-						<li><a href="https://www.inaturalist.org/people/diogofmatias/" rel="me">iNaturalist</a> observations.</li>
-						<li><a href="https://www.librarything.com/profile/diogo.m" rel="me">Library Thing</a> books.</li>
-					</ul>
-			</article>
+			<header>
+				<hgroup>
+					<h1>Hello, I’m Diogo.</h1>
+					<p>This is my notebook, an archive for projects, and a place for learning about the web.</p>
+				</hgroup>
+			</header>
+			<img
+        alt="Myself walking by a stream at the bottom of a lush ravine during a sunny day."
+        src="media/barranco_de_los_cernicalos.jpg"
+        srcset="
+        	media/barranco_de_los_cernicalos-300.webp 300w,
+        	media/barranco_de_los_cernicalos-480.webp 480w,
+        	media/barranco_de_los_cernicalos-600.webp 600w,
+        	media/barranco_de_los_cernicalos-800.webp 800w,
+        	media/barranco_de_los_cernicalos-1200.webp 1200w,
+        "
+        fetchpriority="high"
+        decoding="async"
+        sizes="(min-width: 600px) 600px, 100vw"
+        width="600"
+				height="600">
+			<aside role="complementary">
+				<p>Updated on a sunny and warm afternoon on <time datetime="2026-07-25">Saturday, July 25</time>. <span aria-hidden="true">☀</span></p>
+			</aside>
+			<h2>Now</h2>
+			<ul>
+				<li>Having coffee in Trieste.</li>
+				<li>Exploring nature with the <a href="https://caisag.ts.it/gruppo-tutela-ambiente-montano-tam/" lang="it">Gruppo Tutela Ambiente Montano - TAM</a>.</li>
+				<li>Going to the <a href="https://www.openstreetmap.org/node/13181117353/">farmer’s market at the <span lang="it">Piazza Sant’Antonio</span></a> most Saturdays.</li>
+				<li>Taking the W3C’s HTML5 and CSS Fundamentals course on edX.</li>
+				<li>Preparing to move to a new apartment.</li>
+			</ul>
+			<h2>Interests</h2>
+			<ul>
+				<li>Citizen science.</li>
+				<li>Visual design history.</li>
+				<li>Web standards and digital accessibility.</li>
+				<li>Digital archives.</li>
+			</ul>
+			<h2>Job</h2>
+		  <p>I design science communication materials for projects funded by the European Union.</p>
+			<h2>Elsewhere on the web</h2>
+			<ul>
+				<li><a href="https://www.are.na/diogo-matias/channels" rel="me">Are.na</a> channels.</li>
+				<li><a href="https://archive.org/details/fav-dyogurt/" rel="me">Internet Archive</a> favourites.</li>
+				<li><a href="https://bandcamp.com/diogo-m/" rel="me">Bandcamp</a> music collection.</li>
+				<li><a href="https://www.inaturalist.org/people/diogofmatias/" rel="me">iNaturalist</a> observations.</li>
+				<li><a href="https://www.librarything.com/profile/diogo.m" rel="me">Library Thing</a> books.</li>
+			</ul>
 		</main>
 		<footer>
 			<address>
@@ -95,10 +98,8 @@ Let me know if you find anything that could be written with better semantics or 
 			</address>
 			<a href="https://recycled.cloud/">
 				<img
-					src="media/green_web_foundation-diogomatias.net.png"
-					srcset="media/green_web_foundation-diogomatias.net.webp"
-					alt="This website is hosted sustainabily by Recycled Cloud. Verified by The Green Web Foundation dot org."
-					sizes="auto, 200px"
+					src="media/green_web_foundation-diogomatias.net.webp"
+					alt="This website is hosted sustainably by Recycled Cloud. Verified by The Green Web Foundation dot org."
 					loading="lazy"
 					width="200"
 					height="95"></a>
