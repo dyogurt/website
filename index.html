@@ -45,12 +45,19 @@ Let me know if you find anything that could be written with better semantics or 
 					</hgroup>
 				</header>
 				<img
-	        src="media/me.webp"
 	        alt="Myself walking by a stream at the bottom of a lush ravine during a sunny day.."
-	        loading="eager"
-	        fetchpriority="high"
-	        width="400"
-					height="498">
+	        srcset="
+	        	media/barranco_de_los_cernicalos-300.webp 300w,
+	        	media/barranco_de_los_cernicalos-480.webp 380w,
+	        	media/barranco_de_los_cernicalos-600.webp 600w,
+	        	media/barranco_de_los_cernicalos-800.webp 800w,
+	        	media/barranco_de_los_cernicalos-1200.webp 1200w,
+	        "
+	        sizes="auto, 600px"
+	        loading="lazy"
+	        src="media/barranco_de_los_cernicalos.jpg"
+	        width="600"
+					height="600">
 				<aside role="note">
 					<p>Updated on a sunny and warm afternoon on <time datetime="2026-07-25">Saturday, July 25.</time> <span aria-hidden="true">☀</span></p>
 				</aside>
@@ -89,14 +96,21 @@ Let me know if you find anything that could be written with better semantics or 
 			<a href="https://recycled.cloud/">
 				<img
 					src="media/green_web_foundation-diogomatias.net.png"
-					alt="This website runs on green hosting. Verified by thegreenwebfoundation.org"
+					srcset="media/green_web_foundation-diogomatias.net.webp"
+					alt="This website is hosted sustainabily by Recycled Cloud. Verified by The Green Web Foundation dot org."
+					sizes="auto, 200px"
 					loading="lazy"
 					width="200"
 					height="95"></a>
 			<a href="https://gossipsweb.net">
 				<img
 					src="media/twwmwh-blue.jpg"
+					srcset="
+						media/twwmwh-blue-343.webp 343w,
+						media/twwmwh-blue-686.webp 686w,
+					"
 					alt="This website was made with hands."
+					sizes="auto, 343px"
 					loading="lazy"
 					width="343"
 					height="46"></a>
