@@ -117,3 +117,13 @@ footer {
   border: solid;
   }
 }
+
+/* Print styles */
+@media print {
+  nav, footer {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
